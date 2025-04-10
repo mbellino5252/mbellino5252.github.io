@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Grid Layout</title>
+    <link rel="stylesheet" href="style-08.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "title title title"
+                "image image text"
+                "caption caption text"
+                "box1 box2 text";
+            gap: 5px;
+            max-width: 600px;
+            border: 1px solid black;
+        }
+        .title {
+            grid-area: title;
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .image-cell {
+            grid-area: image;
+        }
+        .image-cell img {
+            width: 144%;
+            display: block;
+        }
+        .text-column {
+            grid-area: text;
+            background-color: lightblue;
+            padding: 50px;
+            align-self: stretch;
+        }
+        .caption {
+            grid-area: caption;
+            background-color: pink;
+            text-align: center;
+            padding: 51px;
+        }
+        .small-box:first-of-type {
+            background-color: lightcoral;
+    
+        }
+        .small-box:last-of-type {
+            grid-area: box2;
+            background-color: lightcoral;
+            padding: 50px;
+     
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="title">The Truth About Elephants</div>
+        <div class="image-cell">
+            <img src="https://cdn.britannica.com/02/152302-050-1A984FCB/African-savanna-elephant.jpg" alt="Elephant">
+        </div>
+        <div class="text-column">Why is it so easy ...</div>
+        <div class="caption">A baby elephant hanging out with ...</div>
+        <div class="small-box">It's hard to tell...</div>
+        <div class="small-box">Today in the newspaper...</div>
+    </div>
+</body>
+</html>

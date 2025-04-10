@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me - Max Bellino</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <header>
+        <div class="logo">Max Bellino</div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="burger-menu">&#9776;</label>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section id="contact">
+      <div class="form-container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out using the form below. I'm happy to discuss my projects, answer questions, or explore opportunities together!</p>
+
+        <form method="POST" action="https://oim.108122.xyz/form2">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+              <label for="country">Country:</label>
+              <input list="countries" id="country" name="country" required />
+              <datalist id="countries">
+                <option value="United States">
+                <option value="United Kingdom">
+                <option value="Canada">
+                <option value="Ireland">
+                <option value="Australia">
+              </datalist>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required placeholder="Enter your message" rows="5"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

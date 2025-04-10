@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Exercise</title>
+    <style>
+      table {
+  border:2px solid black; /*defines the outside border*/
+  width:50%; /* sets the width of table to 50% of width of web-page*/
+  margin-left:auto; margin-right:auto; /* centers table on page*/
+  border-collapse: collapse; /* Adjacent cells have shared borders */
+  background: url(images/music.gif); 
+  }
+td {
+  border: 1px solid black; /* defines the border for each cell*/
+  vertical-align:top; /* defines the vertical alignment of text in each cell*/
+  text-align:center;
+   }
+tr#top {
+  background-color:yellow;
+  }
+</style>
+  </head>
+  <body>
+    <table>
+      <caption>Catalog </caption>
+      <thead>
+        <tr>
+          <th>Product Code</th>
+          <th>Product Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sock</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shirt</td>
+          <td>$15</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Pants</td>
+          <td>$20</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

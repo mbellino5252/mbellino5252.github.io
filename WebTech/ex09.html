@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #c0c0c0;
+            padding: 20px;
+            width: 350px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        button img {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="https://oim.108122.xyz/form2" method="post">
+            <label for="">Last Name:</label>
+            <input placeholder="Last name">
+            <label>First Name:</label>
+            <input placeholder="First name">
+            <label for="">Email:</label>
+            <input placeholder="Email address">
+            <label>Gender:</label>
+            <label>Male <input type="radio" value="male"></label>
+            <label>Female <input type="radio" name="gender" value="female"></label>
+            <label>My favorite topics are:</label>
+            <label> <input type="checkbox" name=""> HTML</label>
+            <label><input type="checkbox" name=""> CSS</label>
+            <label><input type="checkbox" name="" value="JavaScript"> JavaScript</label>
+            <div>
+                <label for="state-select">Which state do you live in?</label>
+                <select name="state" id="state-select"> 
+                    <option value="">-- Please select your Grade--</option> 
+                    <option value="A">A</option> 
+                    <option value="B">B</option> 
+                    <option value="C">C</option> 
+                </select>
+            </div>
+            <div>
+                <label>Leave a Reply:</label>
+                <textarea 
+                rows="5" cols="25" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <button type="submit">
+                SUBMIT <img src="images/mailbox.png" height="30" alt="submit button"/>
+            </button>
+            <button type="reset">
+                RESET <img src="https://cdn-icons-png.flaticon.com/512/6082/6082221.png" height="30" />
+            </button>
+        </form>
+    </div>
+</body>
+</html>
